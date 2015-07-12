@@ -1,0 +1,8 @@
+{
+  "port": 3000,
+  "sessionSecret": "AHI1976",
+  "admin": {
+    "username": "PaulKeahi",
+    "password": "pa$$w0rd"
+  }
+}

@@ -1,3 +1,13 @@
 extend index
+
 block content
-	h1 Hello
+
+  if name
+    h1 Hello, #{name}
+    p Please note...your session will expire after 20 seconds of inactivity
+  else
+    h2 Please Enter Your Name
+    form(action="/login" name="name" method="post")
+      input(type='textbox' name="userName" placeholder="First Name")
+      input(type='textbox' name="password" placeholder="password")
+      input(type="submit" value="Submit")
